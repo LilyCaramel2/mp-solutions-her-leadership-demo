@@ -11,12 +11,12 @@
       theme: {
         extend: {
           colors: {
-            ink: '#241b24',
-            forest: '#ff6b35',
-            citrus: '#ff9f1c',
-            coral: '#f0447d',
-            cream: '#fffaf5',
-            mist: '#fff0f2'
+            ink: '#171717',
+            forest: '#ff7200',
+            citrus: '#ffad1f',
+            coral: '#f03f5f',
+            cream: '#fff9ed',
+            mist: '#fff0df'
           },
           fontFamily: {
             sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
@@ -31,19 +31,19 @@
   </script>
   <style>
     html { scroll-behavior: smooth; }
-    body { background: #fffaf5; color: #241b24; }
+    body { background: #fff9ed; color: #171717; }
     .grain { background-image: radial-gradient(rgba(20,35,29,.09) .7px, transparent .7px); background-size: 7px 7px; }
-    .hero-wash { background: linear-gradient(115deg, rgba(36,27,36,.94) 0%, rgba(82,35,64,.72) 47%, rgba(244,68,125,.18) 100%); }
+    .hero-wash { background: linear-gradient(105deg, rgba(17,17,17,.94) 0%, rgba(17,17,17,.82) 34%, rgba(17,17,17,.42) 58%, rgba(17,17,17,.04) 82%); }
     .glass { background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.28); backdrop-filter: blur(18px); }
-    .orange-rule { height: 5px; background: linear-gradient(90deg, #ff991c, #f0445f, #ff991c); }
+    .orange-rule { height: 6px; background: linear-gradient(90deg, #ff7200 0%, #ffad1f 48%, #f03f5f 100%); }
   </style>
 </head>
 <body class="font-sans antialiased">
-  <header class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-ink/92 text-white backdrop-blur-xl">
+  <header class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-ink/95 text-white backdrop-blur-xl">
     <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
       <a href="#top" class="flex items-center gap-3" aria-label="1000 Women Voice home">
         <span class="grid h-10 w-10 place-items-center rounded-full border border-citrus/70 text-xl text-citrus">♡</span>
-        <span class="text-xs font-semibold uppercase tracking-[.18em]">1000 Women<br><span class="font-normal tracking-[.08em] text-white/65">One Voice</span></span>
+        <span class="text-xs font-semibold uppercase tracking-[.18em]">1000 Women<br><span class="font-normal tracking-[.08em] text-ink/70">One Voice</span></span>
       </a>
       <nav class="hidden items-center gap-7 text-xs font-semibold uppercase tracking-[.15em] md:flex">
         <a href="#dialogue" class="transition hover:text-citrus">Dialogue</a>
@@ -98,11 +98,11 @@
       </div>
     </section>
 
-    <section class="bg-ink text-white">
+    <section class="bg-citrus text-ink">
       <div class="mx-auto grid max-w-7xl gap-6 px-5 py-16 sm:grid-cols-3 lg:px-8 lg:py-20">
-        <div class="border-l-2 border-citrus pl-5"><p class="font-display text-4xl">Lead</p><p class="mt-3 text-sm leading-6 text-white/65">Women shaping institutions, communities, policy, and public life.</p></div>
-        <div class="border-l-2 border-coral pl-5"><p class="font-display text-4xl">Implement</p><p class="mt-3 text-sm leading-6 text-white/65">A shared focus on turning commitment into coordinated action.</p></div>
-        <div class="border-l-2 border-white/60 pl-5"><p class="font-display text-4xl">Create</p><p class="mt-3 text-sm leading-6 text-white/65">A stronger future through dialogue, partnership, and accountability.</p></div>
+        <div class="border-l-4 border-ink pl-5"><p class="font-display text-4xl">Lead</p><p class="mt-3 text-sm leading-6 text-ink/70">Women shaping institutions, communities, policy, and public life.</p></div>
+        <div class="border-l-4 border-coral pl-5"><p class="font-display text-4xl">Implement</p><p class="mt-3 text-sm leading-6 text-ink/70">A shared focus on turning commitment into coordinated action.</p></div>
+        <div class="border-l-4 border-ink/60 pl-5"><p class="font-display text-4xl">Create</p><p class="mt-3 text-sm leading-6 text-ink/70">A stronger future through dialogue, partnership, and accountability.</p></div>
       </div>
     </section>
 
@@ -111,7 +111,7 @@
       <div class="mt-12 grid gap-6 lg:grid-cols-3">
         <article class="rounded-[2rem] border border-ink/10 bg-white p-7 shadow-soft"><p class="text-xs font-bold uppercase tracking-[.2em] text-coral">Friends</p><p class="mt-4 font-display text-5xl text-ink">R500</p><p class="mt-4 text-sm leading-6 text-ink/65">Individual event ticket via Webtickets.</p><a href="https://www.webtickets.co.za/v2/item.aspx?itemid=1509082961" target="_blank" rel="noreferrer" class="mt-8 inline-flex rounded-full bg-coral px-5 py-3 text-xs font-bold uppercase tracking-[.13em] text-white">Book on Webtickets ↗</a></article>
         <article class="rounded-[2rem] border border-citrus/60 bg-citrus p-7 text-ink shadow-soft"><p class="text-xs font-bold uppercase tracking-[.2em]">Teams</p><p class="mt-4 font-display text-5xl">R10 000</p><p class="mt-4 text-sm leading-6 text-ink/70">Standard table of 10 for organisations and teams.</p><a href="mailto:16days@1000women.co.za" class="mt-8 inline-flex rounded-full bg-ink px-5 py-3 text-xs font-bold uppercase tracking-[.13em] text-white">Enquire by email ↗</a></article>
-        <article id="partners" class="rounded-[2rem] border border-ink/10 bg-ink p-7 text-white shadow-soft"><p class="text-xs font-bold uppercase tracking-[.2em] text-citrus">Partnerships</p><p class="mt-4 font-display text-5xl">From R15k</p><p class="mt-4 text-sm leading-6 text-white/65">Partnership tiers with tables, visibility, display, and event presence.</p><a href="mailto:16days@1000women.co.za" class="mt-8 inline-flex rounded-full bg-coral px-5 py-3 text-xs font-bold uppercase tracking-[.13em] text-white">Open a partnership conversation ↗</a></article>
+        <article id="partners" class="rounded-[2rem] border border-ink/10 bg-ink p-7 text-white shadow-soft"><p class="text-xs font-bold uppercase tracking-[.2em] text-citrus">Partnerships</p><p class="mt-4 font-display text-5xl">From R15k</p><p class="mt-4 text-sm leading-6 text-ink/70">Partnership tiers with tables, visibility, display, and event presence.</p><a href="mailto:16days@1000women.co.za" class="mt-8 inline-flex rounded-full bg-coral px-5 py-3 text-xs font-bold uppercase tracking-[.13em] text-white">Open a partnership conversation ↗</a></article>
       </div>
       <div class="mt-8 grid gap-4 text-sm text-ink/70 sm:grid-cols-2"><p><span class="font-bold text-ink">VIP seat:</span> R3 500</p><p><span class="font-bold text-ink">Partnership tiers:</span> R15 000 · R50 000 · R100 000</p></div>
     </section>
