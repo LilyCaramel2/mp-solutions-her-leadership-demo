@@ -138,8 +138,19 @@ h1, h2, h3, p { margin-top: 0; }
 .partnership-strip .card-label { margin-bottom: 8px; }
 .partnership-strip h3 { margin: 0 0 6px; color: var(--slate); font-size: clamp(22px, 3vw, 32px); letter-spacing: -.04em; }
 .partnership-strip h3 span { color: var(--slate); text-decoration: underline; text-decoration-color: var(--hot-pink); text-decoration-thickness: .1em; text-underline-offset: .12em; }
-.partnership-strip p:last-child { margin: 0; color: rgba(36, 57, 77, .7); font-size: 13px; letter-spacing: .04em; }
+.partnership-strip p:not(.card-label) { margin: 8px 0 0; color: rgba(36, 57, 77, .76); font-size: 13px; line-height: 1.55; }
 .button-pink { border: 1px solid var(--hot-pink); background: var(--slate); color: var(--warm-ivory); box-shadow: 0 0 0 4px rgba(242, 41, 138, .11); }
+
+.team-section { padding: 96px 0; background: linear-gradient(135deg, var(--warm-ivory), var(--pale-apricot)); color: var(--slate); }
+.team-heading { max-width: 760px; margin: 0 auto 34px; text-align: center; }
+.team-heading .section-kicker { justify-content: center; }
+.team-heading h2 { margin: 0 0 14px; font-size: clamp(36px, 5vw, 58px); line-height: 1; letter-spacing: -.06em; }
+.team-heading h2 em { color: var(--hot-pink); font-style: normal; }
+.team-heading > p:last-child { margin: 0; color: rgba(36, 57, 77, .76); font-size: 15px; line-height: 1.65; }
+.team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.team-card { padding: 28px; border: 1px solid rgba(36, 57, 77, .13); border-radius: 24px 24px 24px 48px; background: rgba(255, 255, 255, .58); box-shadow: 0 18px 44px rgba(36, 57, 77, .08); }
+.team-role { display: block; margin-bottom: 24px; color: var(--tangerine); font-size: 10px; font-weight: 850; letter-spacing: .16em; text-transform: uppercase; }
+.team-card h3 { margin: 0; color: var(--slate); font-size: clamp(23px, 2.7vw, 32px); letter-spacing: -.045em; }
 
 .media-section { padding: 106px 0 110px; background: linear-gradient(135deg, rgba(97, 122, 144, .16), var(--slate) 72%); }
 .media-heading { display: flex; align-items: end; justify-content: space-between; gap: 30px; margin-bottom: 34px; }
@@ -158,10 +169,12 @@ h1, h2, h3, p { margin-top: 0; }
 .closing-inner { position: relative; z-index: 1; display: flex; align-items: center; justify-content: space-between; gap: 36px; }
 .closing-section h2 { margin: 0; color: var(--warm-ivory); font-size: clamp(38px, 5vw, 64px); line-height: .98; letter-spacing: -.06em; }
 .site-footer { padding: 30px 0; border-top: 1px solid rgba(255, 248, 243, .12); background: var(--slate); }
-.footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; color: rgba(255, 248, 243, .62); font-size: 11px; }
+.footer-inner { display: grid; grid-template-columns: minmax(130px, .8fr) minmax(170px, .9fr) minmax(280px, 1.5fr) minmax(145px, auto); align-items: start; gap: 24px; color: rgba(255, 248, 243, .62); font-size: 11px; }
 .footer-brand { display: grid; gap: 4px; color: var(--warm-ivory); font-size: 12px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
 .footer-brand small { color: var(--apricot); font-size: 10px; font-weight: 500; letter-spacing: .04em; text-transform: none; }
 .footer-inner p { margin: 0; }
+.footer-details { display: grid; gap: 8px; line-height: 1.6; overflow-wrap: anywhere; }
+.footer-details p { margin: 0; }
 .footer-links { display: grid; gap: 5px; text-align: right; }
 .footer-links a:hover { color: var(--hot-pink); }
 
@@ -182,6 +195,8 @@ h1, h2, h3, p { margin-top: 0; }
   .dialogue-side { min-height: 360px; }
   .dialogue-orbit { right: 10%; width: 280px; height: 280px; }
   .header-cta { display: none; }
+  .footer-inner { grid-template-columns: 1fr 1fr; }
+  .footer-links { text-align: left; }
 }
 @media (max-width: 700px) {
   .page-width { width: calc(100% - 36px); }
@@ -223,6 +238,10 @@ h1, h2, h3, p { margin-top: 0; }
   .section-heading { margin-bottom: 28px; }
   .section-intro { font-size: 14px; line-height: 1.65; }
   .pillar-grid, .ticket-grid { grid-template-columns: 1fr; gap: 12px; }
+  .team-section { padding: 76px 0; }
+  .team-grid { grid-template-columns: 1fr; gap: 12px; }
+  .team-card { padding: 24px; }
+  .team-role { margin-bottom: 16px; }
   .pillar-card { min-height: 205px; padding: 24px; border-radius: 22px 22px 22px 42px; }
   .pillar-number { margin-bottom: 22px; }
   .pillar-card h3 { font-size: 28px; }
@@ -240,7 +259,8 @@ h1, h2, h3, p { margin-top: 0; }
   .closing-inner { align-items: flex-start; flex-direction: column; gap: 26px; }
   .closing-section h2 { font-size: 48px; }
   .closing-inner .button { width: 100%; }
-  .footer-inner { align-items: flex-start; flex-direction: column; gap: 16px; }
+  .footer-inner { grid-template-columns: 1fr; gap: 16px; }
   .footer-inner p { font-size: 10px; line-height: 1.5; }
+  .footer-details { font-size: 10px; }
   .footer-links { text-align: left; }
 }
