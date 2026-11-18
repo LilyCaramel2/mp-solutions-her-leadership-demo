@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
+Disallow: /privacy.html
 Sitemap: https://mp-solutions-her-leadership-demo.vercel.app/sitemap.xml
